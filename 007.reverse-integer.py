@@ -11,7 +11,7 @@ def reverse(x):
     logging.debug('sign = '+str(sign))
     x = abs(x)
     ans = 0
-    while x:
+    while x > 0:
         ans = ans * 10 + x % 10
         x //= 10
     return sign * ans if ans <= 0x7fffffff else 0
